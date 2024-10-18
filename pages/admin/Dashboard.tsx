@@ -72,10 +72,11 @@ import {
   chartExample3,
   chartExample4,
 } from "../../variables/charts";
+/* global BigInt */
 
-function Dashboard(props) {
+function Dashboard(props:any) {
   const [bigChartData, setbigChartData] = React.useState("data1");
-  const setBgChartData = (name) => {
+  const setBgChartData = (name:any) => {
     setbigChartData(name);
   };
   return (
@@ -154,7 +155,7 @@ function Dashboard(props) {
                 <div className="chart-area">
                   <Line
                     data={chartExample1[bigChartData]()}
-                    options={chartExample1.options}
+                    options ={chartExample1.options}
                   />
                 </div>
               </CardBody>

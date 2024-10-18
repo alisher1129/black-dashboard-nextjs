@@ -1,3 +1,7 @@
+/* eslint-disable @next/next/no-sync-scripts */
+/* eslint-disable @next/next/google-font-display */
+
+
 /*!
 
 =========================================================
@@ -191,7 +195,7 @@ const greenGradientColor = (context: ScriptableContext<"line">) => {
 // #########################################
 // // // used inside src/views/Dashboard.js
 // #########################################
-let chartExample1 = {
+export let chartExample1 = {
   data1: () => {
     return {
       labels: [
@@ -310,7 +314,7 @@ let chartExample1 = {
 // #########################################
 // // // used inside src/views/Dashboard.js
 // #########################################
-let chartExample2 = {
+export let chartExample2 = {
   data: () => {
     return {
       labels: ["JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
@@ -342,7 +346,7 @@ let chartExample2 = {
 // #########################################
 // // // used inside src/views/Dashboard.js
 // #########################################
-let chartExample3 = {
+export let chartExample3 = {
   data: () => {
     return {
       labels: ["USA", "GER", "AUS", "UK", "RO", "BR"],
@@ -367,7 +371,7 @@ let chartExample3 = {
 // #########################################
 // // // used inside src/views/Dashboard.js
 // #########################################
-const chartExample4 = {
+export const chartExample4 = {
   data: () => {
     return {
       labels: ["JUL", "AUG", "SEP", "OCT", "NOV"],

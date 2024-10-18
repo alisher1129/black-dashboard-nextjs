@@ -33,8 +33,8 @@ import {
 } from "reactstrap";
 
 function Notifications() {
-  const notificationAlertRef = React.useRef(null);
-  const notify = (place) => {
+  const notificationAlertRef = React.useRef<any>(null);
+  const notify = (place:any) => {
     var color = Math.floor(Math.random() * 5 + 1);
     var type;
     switch (color) {
